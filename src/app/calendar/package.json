@@ -1,0 +1,14 @@
+{
+  "name": "@aaa-project-web/calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.12",
+    "@fullcalendar/daygrid": "^6.1.12",
+    "@fullcalendar/list": "^6.1.12",
+    "@fullcalendar/multimonth": "^6.1.12",
+    "@fullcalendar/react": "^6.1.12",
+    "@fullcalendar/timegrid": "^6.1.12"
+  }
+}
