@@ -1,0 +1,10 @@
+{
+  "name": "@aaa-project-web/config",
+  "version": "1.0.0",
+  "description": "Base dependencies for project.",
+  "dependencies": {
+    "eslint": "^9.3.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
