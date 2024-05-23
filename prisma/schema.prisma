@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Display_options {
+  auto
+  block
+  list_item          @map("list-item")
+  background
+  inverse_background @map("inverse-background")
+  none
+}
+
+model Event {
+  id            String           @id @default(uuid())
+  title         String?
+  groupId       String?
+  allDay        Boolean?
+  display       Display_options?
+  constraint    String?
+  color         String?          @db.VarChar(25)
+  extendedProps Json?
+}
+
+model EventSimmple {
+  id    String    @id @default(uuid())
+  start DateTime
+  end   DateTime?
+}
+
+model RecursiveEvent {
+  id         String    @id @default(uuid())
+  daysOfWeek Json?
+  startRecur DateTime? @db.Date
+  endRecur   DateTime? @db.Date
+  startTime  DateTime? @db.Time()
+  endTime    DateTime? @db.Time()
+}

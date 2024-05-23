@@ -1,8 +1,9 @@
 {
-    "recommendations": [
-        "mhutchie.git-graph",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "ms-vscode.vscode-typescript-next",
-    ]
+  "recommendations": [
+    "mhutchie.git-graph",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "prisma.prisma"
+  ]
 }
